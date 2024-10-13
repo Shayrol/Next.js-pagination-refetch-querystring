@@ -21,11 +21,14 @@ const result = useQuery<Pick<IQuery, "fetchBoards">, IQueryFetchBoardsArgs>(
 
 ```bash
 // useQueryFetchBoards.ts
+
 variables: {page: Number(router.query.page) || 1}
 ```
 해당 게시글(Boards)요청시 초기 page 설정을 router.query.page 가 있으면 해당 값을 사용하고 없으면 1페이지로 요청을 합니다. <br><br>
 
 ```bash
+// useQueryFetchBoards.ts
+
 skip: !router.isReady
 ```
  Next.js의 라우터가 준비되지 않았을 때 GraphQL 쿼리의 실행을 건너뛰도록 하는 옵션입니다.
