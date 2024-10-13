@@ -17,8 +17,7 @@ const result = useQuery<Pick<IQuery, "fetchBoards">, IQueryFetchBoardsArgs>(
       skip: !router.isReady,
     }
 ```
-여기서 중요한점은 router.query.page을 통해 API 요청을 해주기 위해 다음과 같은 설정이 필요합니다.
-
+여기서 중요한점은 router.query.page을 통해 API 요청을 해주기 위해 다음과 같은 설정이 필요합니다. <br><br>
 
 ```bash
 variables: {page: Number(router.query.page) || 1}
