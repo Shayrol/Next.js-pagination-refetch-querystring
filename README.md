@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ---
 **API 요청하기**
-- GraphQL 쿼리를 정의 하고, useQuery 훅을 사용
+-- GraphQL 쿼리를 정의 하고, useQuery 훅을 사용
   
 
 ```bash
