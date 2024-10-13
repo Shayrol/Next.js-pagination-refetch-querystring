@@ -61,7 +61,7 @@ return (
     </S.Wrap>
   );
 ```
-<S.Page> 클릭으로 onClickPage 함수가 실행하느네 다음과 같습니다.
+<S.Page> 클릭으로 onClickPage 함수가 실행하는데 다음과 같습니다.
 
 ```bach
 const onClickPage = (e: MouseEvent<HTMLDivElement>): void => {
@@ -79,10 +79,10 @@ const onClickPage = (e: MouseEvent<HTMLDivElement>): void => {
   };
 ```
 여기서 핵심은 { shallow: true } 입니다.
-이는 페이지를 전환하지 않고 URL의 쿼리스트링의 값을 업데이트 합니다. <br><br>
+이는 페이지를 전환하지 않고 URL의 쿼리스트링의 값을 업데이트 합니다. <br>
 즉 URL 변경으로 페이지가 다시 리렌더링 되지 않고 그대로 유지 되어 URL만 변경을 할 수 있습니다. <br><br>
 
-이후 useEffect로 변경된 router.query.page의 값을 가지고 props로 넘겨받은 refetch를 진행합니다. <br><br>
+이후 useEffect로 변경된 router.query.page의 값을 가지고 props로 넘겨받은 refetch를 진행합니다.
 ```bash
 // URL 변경 감지 및 데이터 refetch
   useLayoutEffect(() => {
