@@ -1,17 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 작업환경
+- React, Next.js, Typescript, Apollo, GraphQL, Emotion
 
-First, run the development server:
+## 목적
+- 게시글 요청 API + Pagination 구현과 QueryString을 통해 해당 게시글 페이지 유지
+
+---
+**API 요청하기**
+- GraphQL 쿼리를 정의 하고, useQuery 훅을 사용
+  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+const result = useQuery<Pick<IQuery, "fetchBoards">, IQueryFetchBoardsArgs>(
+    FETCH_BOARDS,
+    {
+      variables: { page: Number(router.query.page) || 1 },
+      skip: !router.isReady,
+    }
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
