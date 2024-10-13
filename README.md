@@ -6,7 +6,7 @@
   여기서 pagination 기준으로 refetch와 router.query의 사용으로 최적화 하는데 목적을 두고 있습니다. <br>
   (페이지 이동에 화면이 깜박이거나 API 요청이 2번 일어나는 현상이 있었습니다.)
 ---
-![2024-10-1401-24-01-ezgif com-speed](https://github.com/user-attachments/assets/5cb3c3de-633a-4df6-b9bc-f2c756de0684)
+![2024-10-1401-24-01-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/54f16014-42aa-43ef-ace3-ad9e8b6c7718)
 ---
 ## GraphQL 쿼리 셋팅
 **API 요청하기**
