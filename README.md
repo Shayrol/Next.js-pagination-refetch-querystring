@@ -3,7 +3,8 @@
 
 ## 목적
 - Serch, pagination 또는 상품 옵션 선택과 같은 정보를 URL에 저장을 하고 다시 해당 데이터를 가져오는데 있어 요청 처리를 고민했으며, <br>
-  여기서 pagination 기준으로 refetch와 router.query의 사용으로 최적화 하는데 목적을 두고 있습니다. - (페이지 이동에 화면이 깜박이거나 API 요청이 2번 일어나는 현상이 있었습니다.)
+  여기서 pagination 기준으로 refetch와 router.query의 사용으로 최적화 하는데 목적을 두고 있습니다. <br>
+  (페이지 이동에 화면이 깜박이거나 API 요청이 2번 일어나는 현상이 있었습니다.)
 
 ---
 ## GraphQL 쿼리 셋팅
