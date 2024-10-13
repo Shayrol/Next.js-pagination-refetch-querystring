@@ -40,7 +40,10 @@ skip: !router.isReady
   ```
 
   **Pagination**
-  - Pagination에 props로 refetch={refetch} 로 넘겨줍니다. / <<Pagination refetch={refetch} />>
+  - Pagination에 props로 refetch={refetch} 로 넘겨줍니다.
+  ```bash
+  <Pagination refetch={refetch} />
+  ```
 
 ## pagination.tsx
 ```bash
