@@ -39,7 +39,7 @@ skip: !router.isReady
   const { data, refetch } = useQueryFetchBoards();
   ```
 
-  **<Pagination />
+  **<Pagination />**
   - Pagination에 props로 refetch={refetch} 로 넘겨줍니다. / <Pagination refetch={refetch} />
 
 ## pagination.tsx
