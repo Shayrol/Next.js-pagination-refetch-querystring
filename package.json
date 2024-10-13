@@ -1,0 +1,35 @@
+{
+  "name": "class",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@emotion/css": "^11.13.4",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "apollo-upload-client": "^17.0.0",
+    "graphql": "^16.9.0",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "recoil": "^0.7.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@types/apollo-upload-client": "^18.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "typescript": "^5.6.3"
+  }
+}
