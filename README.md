@@ -102,3 +102,10 @@ const onClickPage = (e: MouseEvent<HTMLDivElement>): void => {
     }
   }, [router.query.page]);
 ```
+
+
+## 정리글
+- pagination 이동 시 router.query.page를 사용하여 페이지 번호를 query string으로 관리(?page=3 형식).
+- shallow: true 옵션을 통해 페이지 이동 시 전체 화면을 리렌더링하지 않도록 최적화.
+- useEffect를 사용하여 router.query.page가 변경될 때 Apollo의 refetch를 호출하여 데이터만 갱신.
+- 이를 통해 불필요한 렌더링을 방지하고 사용자 경험을 개선했습니다.
